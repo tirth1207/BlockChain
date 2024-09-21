@@ -21,7 +21,7 @@ This is a simple blockchain implementation written in Python. It allows you to c
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/blockchain.git
+    git clone https://github.com/tirth1207/blockchain.git
     ```
 
 2. Navigate to the project folder:
@@ -31,7 +31,7 @@ This is a simple blockchain implementation written in Python. It allows you to c
 
 3. Install the dependencies (if any):
     ```bash
-    pip install -r requirements.txt
+    pip install Flask==2.0.3
     ```
 
 ## Usage
