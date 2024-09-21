@@ -21,7 +21,7 @@ This is a simple blockchain implementation written in Python. It allows you to c
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/tirth1207/blockchain.git
+    https://github.com/tirth1207/BlockChain.git
     ```
 
 2. Navigate to the project folder:
