@@ -1,0 +1,30 @@
+<!-- templates/mine.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mine a Block</title>
+</head>
+<body>
+    <h1>Mine a New Block</h1>
+    <button onclick="mineBlock()">Mine Block</button>
+    <p id="response"></p>
+    <form action="/transactions/new" method="POST">
+        <input type="text" name="sender_id" placeholder="Sender ID">
+        <input type="text" name="recipient_id" placeholder="Recipient ID">
+        <input type="number" name="amount" placeholder="Amount">
+        <input type="text" name="signature" placeholder="Signature">
+        <button type="submit">Send Transaction</button>
+    </form>
+    <script>
+        function mineBlock() {
+            fetch('/mine', { method: 'GET' })
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('response').innerText = 'Block mined: ' + JSON.stringify(data);
+                })
+                .catch(error => console.error('Error mining block:', error));
+        }
+    </script>
+</body>
+</html>
